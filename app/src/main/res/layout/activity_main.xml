@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cupkopi"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:alpha="0"
+        android:src="@drawable/coffi2"
+        android:id="@+id/img_coffi2"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_coffi2"
+        android:text="A cup of coffee to boost your energy!"
+        android:padding="30dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:id="@+id/txt_2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_2"
+        android:layout_marginTop="30dp"
+        android:text="Get Started"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/my_secondary"
+        android:id="@+id/txt_3"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_3"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:width="300dp"
+        android:text="Log In"
+        android:background="@drawable/button_shape"
+        android:textColor="@color/white"
+        android:id="@+id/main_login_btn"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_login_btn"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:width="300dp"
+        android:text="Sign up"
+        android:background="@drawable/button_shape"
+        android:textColor="@color/white"
+        android:id="@+id/main_signup_btn"/>
+
+</RelativeLayout>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgcoklat"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".RatingActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/rate_btn_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/menu_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="50dp"
+            android:text="Give Me Feedback!"
+            android:textColor="@color/my_primary"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Apakah menurut anda aplikasi ini mudah di mengerti?"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/radio_selector"
+                android:button="@drawable/null_radio_button"
+                android:elevation="4dp"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="ya"
+                android:textColor="@drawable/radio_text_selector" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/radio_selector"
+                android:button="@drawable/null_radio_button"
+                android:elevation="4dp"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="cukup"
+                android:textColor="@drawable/radio_text_selector" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/radio_selector"
+                android:button="@drawable/null_radio_button"
+                android:elevation="4dp"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="tidak"
+                android:textColor="@drawable/radio_text_selector" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Apakah anda nyaman menggunakan aplikasi in?"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/radio_selector"
+                android:button="@drawable/null_radio_button"
+                android:elevation="4dp"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="ya"
+                android:textColor="@drawable/radio_text_selector" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/radio_selector"
+                android:button="@drawable/null_radio_button"
+                android:elevation="4dp"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="cukup"
+                android:textColor="@drawable/radio_text_selector" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/radio_selector"
+                android:button="@drawable/null_radio_button"
+                android:elevation="4dp"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="tidak"
+                android:textColor="@drawable/radio_text_selector" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Apakah anda suka dengan tampilan aplikasi ini?"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/radio_selector"
+                android:button="@drawable/null_radio_button"
+                android:elevation="4dp"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="ya"
+                android:textColor="@drawable/radio_text_selector" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/radio_selector"
+                android:button="@drawable/null_radio_button"
+                android:elevation="4dp"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="cukup"
+                android:textColor="@drawable/radio_text_selector" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/radio_selector"
+                android:button="@drawable/null_radio_button"
+                android:elevation="4dp"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="tidak"
+                android:textColor="@drawable/radio_text_selector" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Apakah konten yang diberikan bermanfaat untuk anda?"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/radio_selector"
+                android:button="@drawable/null_radio_button"
+                android:elevation="4dp"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="ya"
+                android:textColor="@drawable/radio_text_selector" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/radio_selector"
+                android:button="@drawable/null_radio_button"
+                android:elevation="4dp"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="cukup"
+                android:textColor="@drawable/radio_text_selector" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/radio_selector"
+                android:button="@drawable/null_radio_button"
+                android:elevation="4dp"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="tidak"
+                android:textColor="@drawable/radio_text_selector" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Seberapa puas dengan aplikasi ini?"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/rate_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:numStars="5"
+            android:progressBackgroundTint="@color/my_primary"
+            android:progressTint="@android:color/holo_orange_dark"
+
+            android:rating="5"
+            android:stepSize="1" />
+
+        <TextView
+            android:id="@+id/txt_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   "
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_shape"
+            android:padding="10dp"
+            android:text="submit rating"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

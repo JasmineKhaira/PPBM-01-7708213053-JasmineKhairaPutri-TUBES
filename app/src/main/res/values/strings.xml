@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">7708213053_JasmineKhaira</string>
+
+    <string-array name="categories">
+        <item>All Categories</item>
+        <item>News</item>
+        <item>Brew Guide</item>
+    </string-array>
+</resources>
