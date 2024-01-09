@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.cardview.widget.CardView
+import com.ncorti.slidetoact.SlideToActView
 
 class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -11,6 +12,14 @@ class MenuActivity : AppCompatActivity() {
         setContentView(R.layout.activity_menu)
         supportActionBar?.hide()
         clickListener();
+
+        val slide = findViewById<SlideToActView>(R.id.slideLogout)
+        slide.onSlideCompleteListener = object : SlideToActView.OnSlideCompleteListener{
+            override fun onSlideComplete(view: SlideToActView) {
+                val _intent = Intent(this@MenuActivity, MainActivity::class.java)
+                startActivity(_intent)
+            }
+        }
     }
 
     public fun clickListener(){
@@ -19,7 +28,6 @@ class MenuActivity : AppCompatActivity() {
         var btn_profile = findViewById<CardView>(R.id.menu_profile)
         var btn_rate = findViewById<CardView>(R.id.menu_rate)
         var btn_info = findViewById<CardView>(R.id.menu_info)
-        var btn_logout = findViewById<CardView>(R.id.menu_logout)
 
         btn_home.setOnClickListener {
             openHomeActivity()
@@ -35,9 +43,6 @@ class MenuActivity : AppCompatActivity() {
         }
         btn_info.setOnClickListener {
             openInfoActivity()
-        }
-        btn_logout.setOnClickListener {
-            openLoginActivity()
         }
     }
 
@@ -59,10 +64,6 @@ class MenuActivity : AppCompatActivity() {
 
     public fun openInfoActivity(){
         startActivity(Intent(this, DeveloperActivity::class.java))
-    }
-
-    public fun openLoginActivity(){
-        startActivity(Intent(this, LoginActivity::class.java))
     }
 
 }

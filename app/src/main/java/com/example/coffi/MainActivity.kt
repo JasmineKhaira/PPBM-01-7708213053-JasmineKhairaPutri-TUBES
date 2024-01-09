@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         val btn_pindah = findViewById<Button>(R.id.main_login_btn)
         btn_pindah.setOnClickListener {
             val _intentLogin =
-                Intent(this, LoginActivity::class.java)
+                Intent(this, BtnBottomSheetActivity::class.java)
 
             startActivity(_intentLogin)
         }

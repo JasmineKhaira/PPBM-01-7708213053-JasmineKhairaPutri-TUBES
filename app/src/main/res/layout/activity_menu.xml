@@ -11,275 +11,287 @@
     tools:context=".MenuActivity">
 
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
 
-            <TextView
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="130dp"
+            android:layout_marginRight="130dp"
+            android:gravity="center"
+            android:text="Main Menu"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/coffee_shop"
+            android:layout_alignParentRight="true">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="426dp"
+        android:layout_marginBottom="70dp"
+        android:layout_weight="6"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:padding="15dp"
+        android:rowCount="3">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/menu_home"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="60dp"
-                android:layout_marginEnd="130dp"
-                android:layout_marginRight="130dp"
-                android:gravity="center"
-                android:text="Main Menu"
-                android:textSize="30sp"
-                android:textColor="@color/white"
-                android:fontFamily="@font/coffee_shop"
-                android:layout_alignParentRight="true">
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
 
-            </TextView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/home_coffee" />
 
-        </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/coffee_mood"
+                    android:text="Coffee"
+                    android:textAlignment="center"
+                    android:textSize="25sp" />
 
-        <GridLayout
-            android:layout_width="match_parent"
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/menu_explore"
+            android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_weight="8"
-            android:columnCount="2"
-            android:rowCount="3"
-            android:alignmentMode="alignMargins"
-            android:columnOrderPreserved="false"
-            android:padding="15dp">
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/menu_home"
-                app:cardBackgroundColor="@color/white"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                app:cardElevation="8dp"
-                app:cardCornerRadius="8dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
 
-                <LinearLayout
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/home_explore" />
+
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="15dp"
-                    android:orientation="vertical">
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/coffee_mood"
+                    android:text="Explore"
+                    android:textAlignment="center"
+                    android:textSize="25sp" />
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="90dp"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/home_coffee"/>
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Coffee"
-                        android:textSize="25sp"
-                        android:fontFamily="@font/coffee_mood"
-                        android:textAlignment="center"
-                        android:layout_gravity="center_horizontal"/>
+        </androidx.cardview.widget.CardView>
 
-                </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/menu_listDrink"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
 
-            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/menu_explore"
-                app:cardBackgroundColor="@color/white"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                app:cardElevation="8dp"
-                app:cardCornerRadius="8dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/coffee_icon" />
 
-                <LinearLayout
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="15dp"
-                    android:orientation="vertical">
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/coffee_mood"
+                    android:text="List Drink"
+                    android:textAlignment="center"
+                    android:textSize="25sp" />
 
-                    <ImageView
-                        android:layout_width="69dp"
-                        android:layout_height="91dp"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/home_explore" />
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Explore"
-                        android:textSize="25sp"
-                        android:fontFamily="@font/coffee_mood"
-                        android:textAlignment="center"
-                        android:layout_marginTop="5dp"
-                        android:layout_gravity="center_horizontal"/>
+        </androidx.cardview.widget.CardView>
 
-                </LinearLayout>
 
-            </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/menu_profile"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/menu_profile"
-                app:cardBackgroundColor="@color/white"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                app:cardElevation="8dp"
-                app:cardCornerRadius="8dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
 
-                <LinearLayout
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/home_profile" />
+
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="15dp"
-                    android:orientation="vertical">
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/coffee_mood"
+                    android:text="Profile"
+                    android:textAlignment="center"
+                    android:textSize="25sp" />
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="90dp"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/home_profile"/>
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Profile"
-                        android:textSize="25sp"
-                        android:fontFamily="@font/coffee_mood"
-                        android:textAlignment="center"
-                        android:layout_gravity="center_horizontal"/>
+        </androidx.cardview.widget.CardView>
 
-                </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/menu_rate"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
 
-            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/menu_rate"
-                app:cardBackgroundColor="@color/white"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                app:cardElevation="8dp"
-                app:cardCornerRadius="8dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/home_rate" />
 
-                <LinearLayout
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="15dp"
-                    android:orientation="vertical">
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/coffee_mood"
+                    android:text="Rate Us"
+                    android:textAlignment="center"
+                    android:textSize="25sp" />
 
-                    <ImageView
-                        android:layout_width="58dp"
-                        android:layout_height="80dp"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/home_rate" />
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Rate Us"
-                        android:textSize="25sp"
-                        android:fontFamily="@font/coffee_mood"
-                        android:textAlignment="center"
-                        android:layout_gravity="center_horizontal"/>
+        </androidx.cardview.widget.CardView>
 
-                </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/menu_info"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
 
-            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/menu_info"
-                app:cardBackgroundColor="@color/white"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                app:cardElevation="8dp"
-                app:cardCornerRadius="8dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/home_info" />
 
-                <LinearLayout
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="15dp"
-                    android:orientation="vertical">
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/coffee_mood"
+                    android:text="Info"
+                    android:textAlignment="center"
+                    android:textSize="25sp" />
 
-                    <ImageView
-                        android:layout_width="64dp"
-                        android:layout_height="85dp"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/home_info" />
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Info"
-                        android:textSize="25sp"
-                        android:fontFamily="@font/coffee_mood"
-                        android:textAlignment="center"
-                        android:layout_gravity="center_horizontal"/>
+        </androidx.cardview.widget.CardView>
 
-                </LinearLayout>
+    </GridLayout>
 
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/menu_logout"
-                app:cardBackgroundColor="@color/white"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                app:cardElevation="8dp"
-                app:cardCornerRadius="8dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="15dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="65dp"
-                        android:layout_height="89dp"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/home_logout" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Log Out"
-                        android:textSize="25sp"
-                        android:fontFamily="@font/coffee_mood"
-                        android:textAlignment="center"
-                        android:layout_gravity="center_horizontal"/>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-        </GridLayout>
+    <com.ncorti.slidetoact.SlideToActView
+        android:id="@+id/slideLogout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:text="Swipe to Log Out"
+        app:text_style="bold"
+        android:layout_gravity="center"
+        app:outer_color="@color/my_primary"/>
 
 </LinearLayout>
